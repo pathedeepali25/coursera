@@ -1,16 +1,18 @@
 angular.module('LunchCheck',[])
-.controller('LunchCheckController',function($scope,$inject){
+.controller('LunchCheckController',function($scope){
   $scope.Check=function(){
     $scope.items= $scope.food.split(',');
     $scope.c=0;
-    for(var i=0;i<$scope.items.length;i++)
+    for($scope.i=0;$scope.i<$scope.items.length;$scope.i++)
     {
       $scope.c++;
     }
   if($scope.c<=3)
-  $scope.message="Enjoy!";
-  else {
-    $scope.message="Too Much!";
-  }}
+  $scope.msg="Enjoy!";
+  else{
+    $scope.msg="Too Much!";
+  }
+
+}
 
 });
