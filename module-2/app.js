@@ -8,7 +8,7 @@ app.controller("ToBuyController",['$scope','ShoppingListCheckOffService',functio
 app.service('ShoppingListCheckOffService',function(){
   var tobuylist=[{name:'cookies',quantity:10
   },
-  {name:'cookies',quantity:10}];
+  {name:'cookies',quantity:10},{name:'cookies',quantity:10},{name:'cookies',quantity:10},{name:'cookies',quantity:10}];
   var boughtlist=[];
   this.gettobuyitems=function(){
     return tobuylist;
